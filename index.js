@@ -15,7 +15,7 @@ function Cursor (text, values, config) {
   this.connection = null
   this._queue = []
   this.state = 'initialized'
-  this._result = new Result(this._conf.rowMode)
+  this._result = new Result(this._conf.rowMode, this._conf.types)
   this._cb = null
   this._rows = null
   this._portal = null
@@ -48,10 +48,6 @@ Cursor.prototype.submit = function (connection) {
   const ifNoData = () => {
     this.state = 'idle'
     this._shiftQueue()
-  }
-
-  if (this._conf.types) {
-    this._result._getTypeParser = this._conf.types.getTypeParser
   }
 
   con.once('noData', ifNoData)
