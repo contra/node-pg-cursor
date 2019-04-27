@@ -1,13 +1,13 @@
 {
   "name": "pg-cursor",
   "version": "2.0.0",
-  "description": "",
+  "description": "Query cursor extension for node-postgres",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": " mocha && eslint ."
+    "test": "mocha && eslint ."
   },
   "repository": {
     "type": "git",
@@ -16,14 +16,14 @@
   "author": "Brian M. Carlson",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.4.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^3.5.0",
-    "pg": "6.x"
+    "eslint": "^5.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.0.0",
+    "pg": "^7.0.0"
   },
   "dependencies": {}
 }
